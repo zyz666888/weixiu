@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/page_top_size"
+    android:background="#e3f2f9"
+    android:id="@+id/top_customervisit"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/return_customervisit"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_gravity="left"
+            android:src="@drawable/leftarrow" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="客户拜访"
+            android:textColor="#3e3a39"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/add_customervisit"
+            android:layout_width="80dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/customervisit_add_btn"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

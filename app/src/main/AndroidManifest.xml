@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.idisfkj.hightcopywx">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission
+        android:name="com.idisfkj.hightcopywx.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.idisfkj.hightcopywx.permission.MIPUSH_RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" /> <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- 自动聚焦权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    //获取设备网络状态，禁用后无法获取网络状态
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    //网络权限，当禁用后，无法进行检索等相关业务
+    <uses-permission android:name="android.permission.INTERNET" />
+    //读取设备硬件信息，统计数据
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    //读取系统信息，包含系统版本等信息，用作统计
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    //获取设备的网络状态，鉴权所需网络代理
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    //允许sd卡写权限，需写入地图数据，禁用后无法显示地图
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    //允许sd卡读权限，需读取地图数据，禁用后无法显示地图
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    //获取统计数据
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    //鉴权所需该权限获取进程列表
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    //使用步行AR导航，配置Camera权限
+    <uses-permission android:name="android.permission.CAMERA" />
+    //网络定位
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    //GPS定位
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/weixiu"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 百度地图定位 开始 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="dhE1NG1DGkLswVcbGa4UnjEolClB0PSn" />
+
+        <!-- 百度地图定位 结束 -->
+        <!--
+        <activity
+            android:name=".welcome.ProductTourActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity android:name=".main.widget.MainActivity" />
+        <activity android:name=".wx.widget.ChatActivity" />
+        <activity android:name=".find.InstallAndDebugAction" />
+        <activity android:name=".find.BreakdownInfoAction" />
+        <activity android:name=".find.BreakdownMainAction" />
+        <activity android:name=".find.CheckMainAction" />
+        <activity android:name=".find.InstallMainAction" />
+        <activity android:name=".find.RecoveryAction" />
+        <activity android:name=".find.MeasureAction" />
+        <activity android:name=".find.MaintainAction" />
+        <activity android:name=".find.QualityInfoAction" />
+        <activity android:name=".ui.widget.RegisterActivity" />
+        <activity android:name=".main.widget.AddFriendsActivity" />
+        <activity android:name=".main.widget.SearchResultActivity" />
+        <activity android:name=".find.uploadpictureutil.PlusImageActivity" />
+        <activity android:name=".find.workorder.WorkOrderMainActivity" />
+        <activity android:name=".find.workorder.WorkOrderDetail" />
+        <activity android:name=".find.signin.SignedActivity" />
+        <activity android:name=".find.signin.SignInMainActivity" />
+        <activity android:name=".find.customerpraise.CustomerPraiseListActivity" />
+        <activity android:name=".find.customerpraise.CustomerPraiseDetailActivity" />
+        <activity android:name=".find.customercomplaint.CustomerComplaintDetailActivity" />
+        <activity android:name=".find.customercomplaint.CustomerComplaintListActivity" />
+        <activity android:name=".find.files.FileListActivity" />
+        <activity android:name=".find.files.FileDownloadOpenActivity" />
+        <activity android:name=".find.customervisit.AddCustomerVisitActivity" />
+        <activity android:name=".find.customervisit.CustomerVisitListActivity" />
+        <activity android:name=".find.notification.NotificationDetailActivity" />
+        <activity android:name=".find.notification.NotificationListActivity" />
+        <activity android:name=".me.friendcircle.FriendCircleAddAction" />
+        <activity android:name=".find.friendscircle.ListViewExampleActivity" />
+        <activity android:name=".find.friendscircle.PlusImageForFriendsCircleActivity" />
+        <activity android:name=".find.askandanswer.AskAndAnswerActivity" />
+        <activity android:name=".find.askandanswer.AskAndAnswerListActivity" />
+        <activity android:name=".find.aftersale.FixAction" />
+        <activity android:name=".find.aftersale.AftersaleMainAction" />
+        <!-- 启动应用时启动的页面 -->
+        <activity
+            android:name=".loginandregister.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".loginandregister.RegistActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".calendar.activity.CalendarActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".calendar.activity.AddEventSetActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".calendar.activity.ScheduleDetailActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name="com.karics.library.zxing.android.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" />
+        <!-- 注：此service必须在2.2.5版本以后（包括2.2.5版本）加入 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v5.0.0" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".xiaomi.WXMessageReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".dao.MyProvider"
+            android:authorities="com.idisfkj.hightcopywx.provider"
+            android:exported="false">
+            <grant-uri-permission android:pathPattern=".*" />
+
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity  android:name=".SettingActivity"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+    </application>
+
+</manifest>

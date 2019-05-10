@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="zhongtie">
+        <item>哈尔滨铁路局</item>
+        <item>沈阳铁路局</item>
+        <item>北京铁路局</item>
+        <item>太原铁路局</item>
+        <item>呼和浩特铁路局</item>
+        <item>郑州铁路局</item>
+        <item>武汉铁路局</item>
+        <item>西安铁路局</item>
+        <item>济南铁路局</item>
+        <item>上海铁路局</item>
+        <item>南昌铁路局</item>
+        <item>广州铁路(集团)公司</item>
+        <item>南宁铁路局</item>
+        <item>成都铁路局</item>
+        <item>昆明铁路局</item>
+        <item>兰州铁路局</item>
+        <item>乌鲁木齐铁路局</item>
+        <item>青藏铁路公司</item>
+        <item>客车段</item>
+        <item>机务段</item>
+    </string-array>
+</resources>

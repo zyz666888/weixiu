@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.idisfkj.hightcopywx.find.customervisit.AddCustomerVisitActivity">
+    <include layout="@layout/top_customervisit" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2.5pt"
+        android:background="@drawable/centerline"
+        />
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <EditText
+            android:id="@+id/customervisit_desc"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/textarea"
+            android:hint="请输入描述"
+            android:textSize="16dp"
+            android:enabled="true"
+            android:gravity="top"
+            android:scrollbars="vertical" />
+
+        <GridView
+            android:id="@+id/gridView_customervisit"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/customervisit_desc"
+            android:columnWidth="60dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="5"
+            android:verticalSpacing="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/customervisit_date"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/customervisit_time"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/customervisit_date"
+            android:paddingLeft="10dp"
+            android:textSize="16dp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:id="@+id/customervisit_rl_update"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/customervisit_location"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/customervisit_location_update"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="地点微调"
+            android:textColor="@color/color_orange"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/line_color" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/customervisit_bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:clickable="true" />
+
+    <ListView
+        android:id="@+id/customervisit_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customervisit_bmapView"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_2"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/visitcustomer_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="拜访客户:"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/visitcustomer_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/input_padding"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/visitcustomer_name_text"
+            android:background="@null"
+            android:hint="请填写拜访客户"
+            android:textColorHint="@color/hint"
+            android:textSize="@dimen/text_size" />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel_customervisit"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/send_bt_bg"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/confirm_customervisit"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/send_bt_bg"
+            android:text="确认"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape >
+            <solid android:color="@color/gray" />
+            <padding
+                android:bottom="0.5dp"
+                android:left="0.5dp"
+                android:right="0.5dp"
+                android:top="0dp" />
+        </shape>
+    </item>
+    <!--单击时-->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/gray" />
+            <padding
+                android:bottom="0.5dp"
+                android:left="0.5dp"
+                android:right="0.5dp"
+                android:top="0dp" />
+        </shape>
+    </item>
+    <item  android:state_checked="true">
+        <shape>
+            <solid android:color="@color/gray" />
+            <padding
+                android:bottom="0.5dp"
+                android:left="0.5dp"
+                android:right="0.5dp"
+                android:top="0dp" />
+        </shape>
+    </item>
+    <item android:state_window_focused="false">
+        <shape >
+            <solid android:color="#FFFFFF" />
+            <padding
+                android:bottom="0.5dp"
+                android:left="0.5dp"
+                android:right="0.5dp"
+                android:top="0dp" />
+        </shape>
+    </item>
+</selector>
+

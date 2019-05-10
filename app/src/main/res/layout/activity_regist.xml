@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_return_arrow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/register_user" />
+
+        <TextView
+            android:text="新用户注册"
+            android:layout_width="match_parent"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/register_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/register_user_edit"
+            />
+        <EditText
+            android:id="@+id/userName_register"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:hint="用户名"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/register_line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/register_pwd"
+            />
+        <EditText
+            android:id="@+id/password_register"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:hint="密码"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/register_line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/register_pwd"
+            />
+        <EditText
+            android:id="@+id/repassword_register"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:hint="确认密码"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/register_line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/register_user_edit"
+            />
+
+        <EditText
+            android:id="@+id/realname_register"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="30dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="真实姓名"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/register_line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/register_user_edit"
+            />
+        <EditText
+            android:id="@+id/companyId_register"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center_vertical"
+            android:background="@null"
+            android:hint="企业编号"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/register_line" />
+
+    <Button
+        android:id="@+id/register_submit_btn"
+        android:background="@drawable/register_btn"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>

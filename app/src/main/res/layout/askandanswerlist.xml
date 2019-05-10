@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <include layout="@layout/top_askandanswer"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/top_askandanswer_line"
+        android:layout_height="2.5pt"
+        android:layout_below="@+id/top_askandanswer"
+        android:background="@drawable/centerline" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/askandanswer_top_table"
+        android:layout_below="@+id/top_askandanswer_line"
+        android:background="@android:color/white">
+
+        <EditText
+            android:id="@+id/askandanswer_search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/askandanswer_search"
+            android:gravity="center_vertical"
+            android:hint="请输入关键字"
+            android:lines="1"
+            android:padding="10dp"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/askandanswer_answer_btn"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="end"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/send_bt_bg"
+        android:layout_below="@+id/askandanswer_top_table"
+        android:text="专家解答"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:id="@+id/askandanswer_line"
+        android:layout_below="@+id/askandanswer_answer_btn"
+        android:background="@color/listgray" />
+    <ScrollView
+        android:id="@+id/askandanswer_scrollview"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/buttom_askandanswer"
+        android:layout_below="@+id/askandanswer_line"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.idisfkj.hightcopywx.find.askandanswer.AskAndAnswerListView
+                android:id="@+id/askandanswer_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:cacheColorHint="#00000000"></com.idisfkj.hightcopywx.find.askandanswer.AskAndAnswerListView>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_color" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/buttom_askandanswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.idisfkj.hightcopywx.find.ad.BannerLayout
+            android:id="@+id/banner_askandanswer"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+    </LinearLayout>
+</RelativeLayout>

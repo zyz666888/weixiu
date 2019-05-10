@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <include layout="@layout/top_filelist" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2.5pt"
+        android:layout_below="@+id/top_filelist"
+        android:background="@drawable/centerline" />
+    <ScrollView
+        android:id="@+id/filelist_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:layout_above="@+id/buttom_banner_filelist">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.idisfkj.hightcopywx.find.files.FileListView
+                android:id="@+id/file_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:cacheColorHint="#00000000"></com.idisfkj.hightcopywx.find.files.FileListView>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_color" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/buttom_banner_filelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.idisfkj.hightcopywx.find.ad.BannerLayout
+            android:id="@+id/banner_file"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+    </LinearLayout>
+</RelativeLayout>

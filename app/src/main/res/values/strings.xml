@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">微修</string>
+    <string name="tab_weiXin">消息</string>
+    <string name="tab_friend">通信录</string>
+    <string name="tab_find">工作</string>
+    <string name="tab_me">我</string>
+    <string name="action_bar_search">search</string>
+    <string name="plus">plus</string>
+    <string name="multi_chat">发起群聊</string>
+    <string name="add_friends">添加朋友</string>
+    <string name="scan">扫一扫</string>
+    <string name="pay_money">收付款</string>
+    <string name="help_devise">帮助与反馈</string>
+    <string name="chat_send">发送</string>
+    <string name="network_error">网络连接失败,请检查网络</string>
+    <string name="userName">昵称</string>
+    <string name="userName_hint">例如：张三</string>
+    <string name="userPhone_pre">+86</string>
+    <string name="userPhone_hint">你的手机号码</string>
+    <string name="userPassword">密码</string>
+    <string name="userPassword_hint">填写密码</string>
+    <string name="register">注册</string>
+    <string name="choose_picture">选择图片</string>
+    <string name="choose_from_photo">从相册中选择</string>
+    <string name="choose_from_camera">相机拍照</string>
+    <string name="choose_camera_error">未找到存储卡，请检查存储空间</string>
+    <string name="search_friedns_hint">微修号</string>
+    <string name="search">搜索:</string>
+    <string name="dialog_tip">提示</string>
+    <string name="dialog_message">你确定要添加%s用户吗？</string>
+    <string name="dialog_positive">确定</string>
+    <string name="dialog_negative">取消</string>
+    <string name="msg_camera_framework_bug">请在设置中打开访问相机的权限</string>
+    <string name="button_ok">OK</string>
+    <string name="viewfinderview_status_text1">将二维码/条码放入取景框内</string>
+    <string name="viewfinderview_status_text2">即可自动扫描</string>
+    <!--工作模块的-->
+    <string name="m0">派工单</string>
+    <string name="m1">安装调试</string>
+    <string name="m2">预防修</string>
+    <string name="m3">故障修</string>
+    <string name="m4">通知</string>
+    <string name="m5">签到</string>
+    <string name="m6">维修圈</string>
+    <string name="m7">维修文件</string>
+    <string name="m8">客户表扬</string>
+    <string name="m9">客户投诉</string>
+    <string name="m10">拜访客户</string>
+    <string name="m11">质量检验</string>
+    <string name="m12">专家解答</string>
+    <string name="m13">售后</string>
+    <string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在下载</string>
+    <string name="soft_update_cancel">取消</string>
+
+
+    <!--calendar-->
+    <string name="exit_app_hint">再点一次退出应用</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="finish">完成</string>
+    <string name="finished">已完成</string>
+    <string name="start">开始</string>
+
+    <!--calendar-->
+    <string name="calendar_today">今天</string>
+    <string-array name="calendar_month">
+        <item>一月</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>十一月</item>
+        <item>十二月</item>
+    </string-array>
+    <string name="calendar_day">%d日</string>
+    <string name="calendar_year">%d年</string>
+
+    <!--schedule-->
+    <string name="schedule_input_you_do_thing">输入您要做的事情</string>
+    <string name="schedule_input_content_is_no_null">事件内容不能为空</string>
+    <string name="schedule_event_detail_setting">事件详情设置</string>
+    <string name="schedule_title">事件标题</string>
+    <string name="schedule_show_finish_task">显示已完成任务</string>
+    <string name="schedule_hide_finish_task">隐藏已完成任务</string>
+    <string name="schedule_delete_this_schedule">是否删除该行程？</string>
+
+    <!--menu-->
+    <string name="menu_schedule">日程</string>
+    <string name="menu_event_set">事件集</string>
+    <string name="menu_add_event_set">添加事件清单</string>
+    <string name="menu_no_category">未分类</string>
+
+    <!--event.set-->
+    <string name="event_set_list_name">清单名称</string>
+    <string name="event_set_color">颜色</string>
+    <string name="event_set_name_is_not_null">清单名称不能为空</string>
+    <string name="event_set_select_color">选择颜色</string>
+    <string name="event_set_delete_this_event_set">确定要删除该事件集？</string>
+
+    <string name="hour">小时</string>
+    <string name="remarks">备忘录</string>
+    <string name="please_input_desc">请输入备忘信息</string>
+    <string name="date_format">yyyy年MM月dd日 HH:mm</string>
+    <string name="date_format_no_time">%1$s年%2$s月%3$s日</string>
+    <string name="click_here_select_date">点击此处选择时间</string>
+    <string name="click_here_select_location">点击此处选择地点</string>
+    <string name="click_input_location">点击输入地点</string>
+    <string name="add_location">添加地点</string>
+    <string name="select_event_set">选择事件清单</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">QQ号/手机/邮箱</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_in_short">添加或注册账号</string>
+    <string name="error_invalid_email">不是有效的邮箱地址</string>
+    <string name="error_invalid_password">密码太短,至少输入4位</string>
+    <string name="error_incorrect_password">密码是无效的</string>
+    <string name="error_field_required">用户名无效</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+
+    <string name="welcom_head_01">Spreadsheets on the go</string>
+    <string name="welcom_content_01">Get stuff done with or without an internet connection.</string>
+    <string name="welcom_head_02">Share and edit together</string>
+    <string name="welcom_content_02">Write on your own or invite more people to contribute.</string>
+    <string name="welcom_head_03">Automatically save to the web</string>
+    <string name="welcom_content_03">Never lose your progress, so you can keep working from any computer or device.</string>
+    <string name="welcom_head_04">Edit Excel spreadsheets</string>
+    <string name="welcom_content_04">Open, edit, and save Excel files - all within Sheets.</string>
+    <string name="title_activity_setting">SettingActivity</string>
+</resources>
